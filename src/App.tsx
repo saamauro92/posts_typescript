@@ -1,9 +1,10 @@
 import React from "react";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div className="App bg-red-200">
-      <h2 className="bg-red-200 "> tailwind installed</h2>
+    <div className=" bg-zinc-900 text-slate-300 ">
+      <Main />
     </div>
   );
 }
