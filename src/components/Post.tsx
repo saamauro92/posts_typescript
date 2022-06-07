@@ -22,7 +22,10 @@ const Post = ({ posts, handleDelete }: Props): JSX.Element => {
         {posts &&
           posts.length > 0 &&
           [...posts].reverse().map((post, index) => (
-            <div className=" m-2 p-6 w-96  px-10 bg-zinc-800  rounded-lg ">
+            <div
+              className=" m-2 p-6 w-96  px-10 bg-zinc-800  rounded-lg "
+              key={index}
+            >
               <button
                 className="float-right flex  mr-0 
                 text-gray-100 rounded-sm ring-2 ring-purple-400 px-3 py-2 
